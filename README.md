@@ -15,6 +15,12 @@ _**If your project doesn't use ARC**: you must add the `-fobjc-arc` compiler fla
 
 Drag a UIView component, make it a subclass of HLProgressView, then drag an IBOutlet, or simply instantiate a new object of kind HLProgressView.
 
+Update the current progress state with this simple method:
+
+`- (void)setCurrentProgress :(CGFloat)fCurrentProgress;`
+
+You should pass a parameter **between 0. and 1.** as it is a percentage.
+
 ### Customization
 
 You can set the line color and width:
