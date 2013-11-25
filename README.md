@@ -2,8 +2,7 @@
 
 HLProgressView is a lightweight and easy-to-use progress view, subclass of UIView.
 
-![Preview: HLProgressView on iOS7](cloud.makeitbad.fr/fiftydegrees/HLProgressView.png)
-![Preview: HLProgressView on iOS7](cloud.makeitbad.fr/fiftydegrees/HLProgressView.gif)
+![Preview: HLProgressView on iOS7](http://cloud.makeitbad.fr/fiftydegrees/HLProgressView.gif)
 
 ## Installation
 
@@ -14,20 +13,17 @@ _**If your project doesn't use ARC**: you must add the `-fobjc-arc` compiler fla
 
 ## Usage
 
-Set the line color and width:
+Drag a UIView component, make it a subclass of HLProgressView, then drag an IBOutlet, or simply instantiate a new object of kind HLProgressView.
+
+### Customization
+
+You can set the line color and width:
+
 ```objective-c
 - (void)setColor :(UIColor *)color;
 - (void)setWidth :(NSInteger)width;
 ```
 
-### Storyboard
+## Credits
 
-Drag a UIView component, make it a subclass of HLProgressView, then drag an IBOutlet.
-
-### Source code
-
-Instantiate a new object of type HLProgressView.
-
-```objective-c
-HLProgressView *progressView = [HLProgressView new];
-```
+HLProgressView was developed by Emmanuel Perez & [Hervé Heurtault de Lammerville](http://www.fifty-degrees.com). If you have any feature suggestion or bug report, please help out by creating [an issue](https://github.com/fiftydegrees/HLProgressView/issues/new) on GitHub. If you're using HLProgressView in your project, attribution would be apprecied.
