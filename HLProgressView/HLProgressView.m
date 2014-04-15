@@ -11,16 +11,17 @@
 
 @interface HLProgressView ()
 
-@property (nonatomic, weak)   CAShapeLayer *circleLayer;
+@property (nonatomic, strong) CAShapeLayer *circleLayer;
 @property (nonatomic, assign) CGPoint       circleCenter;
 @property (nonatomic, assign) CGFloat       circleRadius;
-
-@property (nonatomic, strong) UIColor      *lineColor;
-@property (nonatomic, assign) NSInteger     iLineWidth;
 
 @end
 
 @implementation HLProgressView
+
+@synthesize color;
+@synthesize width;
+@synthesize progress;
 
 - (id)init
 {
@@ -40,51 +41,74 @@
     return [self initComposants];
 }
 
+ -(id)initWithCoder:(NSCoder *)aDecoder
+{
+    self = [super initWithCoder:aDecoder];
+    if (self)
+    {
+    }
+    
+    return [self initComposants];
+}
+
 - (id)initComposants
 {
     self.circleLayer = [CAShapeLayer layer];
-    self.circleLayer.strokeColor = [[UIColor blackColor] CGColor];
-    self.circleLayer.fillColor = nil;
-    self.circleLayer.lineWidth = 1.0f;
+    self.circleLayer.strokeColor = [UIColor blackColor].CGColor;
+    self.circleLayer.borderWidth = 1;
     
     return self;
 }
 
 #pragma mark - Configuration
 
-- (void)setColor :(UIColor *)color
+- (void)setColor:(UIColor *)updatedColor
 {
-    if (!color)
-        self.circleLayer.strokeColor = [[UIColor blackColor] CGColor];
-    self.circleLayer.strokeColor = [color CGColor];
+    if (!updatedColor)
+        self.circleLayer.strokeColor = [UIColor blackColor].CGColor;
+    self.circleLayer.strokeColor = updatedColor.CGColor;
 }
 
-- (void)setWidth :(NSInteger)width
+- (UIColor *)color {
+    return color;
+}
+
+- (void)setWidth:(NSInteger)updatedWidth
 {
-    if (width < 0)
-        width = 0;
-    else if (width > MIN(self.frame.size.width, self.frame.size.height) / 2)
-        width = MIN(self.frame.size.width, self.frame.size.height) / 2;
-    self.circleLayer.lineWidth = width;
+    if (updatedWidth < 0)
+        updatedWidth = 0;
+    else if (updatedWidth > MIN(self.frame.size.width, self.frame.size.height) / 2)
+        updatedWidth = MIN(self.frame.size.width, self.frame.size.height) / 2;
+    self.circleLayer.lineWidth = updatedWidth;
+}
+
+- (NSInteger)width {
+    return width;
 }
 
 #pragma mark - HLProgressView Main features
 
-- (void)setCurrentProgress :(CGFloat)fCurrentProgress
+- (void)setProgress:(CGFloat)updatedProgress
 {
+    updatedProgress = (updatedProgress < 0.) ? 0.0f : updatedProgress;
+    updatedProgress = (updatedProgress > 1.) ? 1.0f : updatedProgress;
+    
+    self.circleLayer.fillColor = nil;
+    
     self.circleCenter = CGPointMake(self.frame.size.width / 2, self.frame.size.height / 2);
     self.circleRadius = MIN(self.frame.size.width / 2, self.frame.size.width / 2);
     
-    if (fCurrentProgress < 0.)
-        fCurrentProgress = 0.;
-    else if (fCurrentProgress > 1.)
-        fCurrentProgress = 1.;
-    
-    self.circleLayer.path = [[self makeCircleWidthProgress:fCurrentProgress] CGPath];
+    self.circleLayer.path = [self makeCircleWidthProgress:updatedProgress].CGPath;
     
     for (CALayer *layer in self.layer.sublayers)
         [layer removeFromSuperlayer];
     [self.layer addSublayer:self.circleLayer];
+    
+    progress = updatedProgress;
+}
+
+- (CGFloat)progress {
+    return progress;
 }
 
 #pragma mark - Internal function
@@ -92,6 +116,7 @@
 - (UIBezierPath *)makeCircleWidthProgress :(CGFloat)fProgress
 {
     UIBezierPath *path = [UIBezierPath bezierPath];
+    
     [path addArcWithCenter:self.circleCenter
                     radius:self.circleRadius
                 startAngle:DEGREES_TO_RADIANS(-90)

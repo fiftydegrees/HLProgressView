@@ -10,14 +10,8 @@
 #import "HLProgressView.h"
 
 @interface ViewController : UIViewController
-{
-    NSInteger iCurrentProgress;
-    NSTimer   *timer;
-}
 
 @property (weak, nonatomic) IBOutlet HLProgressView *progressView;
 @property (weak, nonatomic) IBOutlet HLProgressView *progressViewReversed;
-
-- (IBAction)didTapStartLoading:(id)sender;
 
 @end

@@ -14,11 +14,11 @@
 
 #pragma mark - HLProgressView Configuration
 
-- (void)setColor :(UIColor *)color;
-- (void)setWidth :(NSInteger)width;
+@property (nonatomic, strong) UIColor *color;
+@property (nonatomic, assign) NSInteger width;
 
-#pragma mark - HLProgressView Main features
+#pragma mark - HLProgressView Features
 
-- (void)setCurrentProgress :(CGFloat)fCurrentProgress;
+@property (nonatomic, assign) CGFloat progress;
 
 @end

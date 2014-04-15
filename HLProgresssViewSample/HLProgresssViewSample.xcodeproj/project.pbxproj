@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3C4F037D18FD9AF2004925CF /* HLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F037C18FD9AF2004925CF /* HLProgressView.m */; };
 		3C7D240A18439CF800E53075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D240918439CF800E53075 /* Foundation.framework */; };
 		3C7D240C18439CF800E53075 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D240B18439CF800E53075 /* CoreGraphics.framework */; };
 		3C7D240E18439CF800E53075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D240D18439CF800E53075 /* UIKit.framework */; };
@@ -16,25 +17,11 @@
 		3C7D241D18439CF800E53075 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C7D241B18439CF800E53075 /* Main.storyboard */; };
 		3C7D242018439CF800E53075 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D241F18439CF800E53075 /* ViewController.m */; };
 		3C7D242218439CF800E53075 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C7D242118439CF800E53075 /* Images.xcassets */; };
-		3C7D242918439CF800E53075 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D242818439CF800E53075 /* XCTest.framework */; };
-		3C7D242A18439CF800E53075 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D240918439CF800E53075 /* Foundation.framework */; };
-		3C7D242B18439CF800E53075 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C7D240D18439CF800E53075 /* UIKit.framework */; };
-		3C7D243318439CF800E53075 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3C7D243118439CF800E53075 /* InfoPlist.strings */; };
-		3C7D243518439CF800E53075 /* HLProgresssViewSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D243418439CF800E53075 /* HLProgresssViewSampleTests.m */; };
-		3C7D244118439D4800E53075 /* HLProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C7D244018439D4800E53075 /* HLProgressView.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3C7D242C18439CF800E53075 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3C7D23FE18439CF800E53075 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3C7D240518439CF800E53075;
-			remoteInfo = HLProgresssViewSample;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3C4F037B18FD9AF2004925CF /* HLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HLProgressView.h; path = ../../HLProgressView/HLProgressView.h; sourceTree = "<group>"; };
+		3C4F037C18FD9AF2004925CF /* HLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HLProgressView.m; path = ../../HLProgressView/HLProgressView.m; sourceTree = "<group>"; };
 		3C7D240618439CF800E53075 /* HLProgresssViewSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HLProgresssViewSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7D240918439CF800E53075 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3C7D240B18439CF800E53075 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -49,13 +36,7 @@
 		3C7D241E18439CF800E53075 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3C7D241F18439CF800E53075 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		3C7D242118439CF800E53075 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		3C7D242718439CF800E53075 /* HLProgresssViewSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HLProgresssViewSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C7D242818439CF800E53075 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3C7D243018439CF800E53075 /* HLProgresssViewSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HLProgresssViewSampleTests-Info.plist"; sourceTree = "<group>"; };
-		3C7D243218439CF800E53075 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		3C7D243418439CF800E53075 /* HLProgresssViewSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HLProgresssViewSampleTests.m; sourceTree = "<group>"; };
-		3C7D243F18439D4800E53075 /* HLProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLProgressView.h; sourceTree = "<group>"; };
-		3C7D244018439D4800E53075 /* HLProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,24 +50,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7D242418439CF800E53075 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C7D242918439CF800E53075 /* XCTest.framework in Frameworks */,
-				3C7D242B18439CF800E53075 /* UIKit.framework in Frameworks */,
-				3C7D242A18439CF800E53075 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C4F037E18FD9B00004925CF /* HLProgressView */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F037B18FD9AF2004925CF /* HLProgressView.h */,
+				3C4F037C18FD9AF2004925CF /* HLProgressView.m */,
+			);
+			name = HLProgressView;
+			sourceTree = "<group>";
+		};
 		3C7D23FD18439CF800E53075 = {
 			isa = PBXGroup;
 			children = (
 				3C7D240F18439CF800E53075 /* HLProgresssViewSample */,
-				3C7D242E18439CF800E53075 /* HLProgresssViewSampleTests */,
 				3C7D240818439CF800E53075 /* Frameworks */,
 				3C7D240718439CF800E53075 /* Products */,
 			);
@@ -96,7 +75,6 @@
 			isa = PBXGroup;
 			children = (
 				3C7D240618439CF800E53075 /* HLProgresssViewSample.app */,
-				3C7D242718439CF800E53075 /* HLProgresssViewSampleTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -120,7 +98,7 @@
 				3C7D241B18439CF800E53075 /* Main.storyboard */,
 				3C7D241E18439CF800E53075 /* ViewController.h */,
 				3C7D241F18439CF800E53075 /* ViewController.m */,
-				3C7D243E18439D4800E53075 /* HLProgressView */,
+				3C4F037E18FD9B00004925CF /* HLProgressView */,
 				3C7D242118439CF800E53075 /* Images.xcassets */,
 				3C7D241018439CF800E53075 /* Supporting Files */,
 			);
@@ -136,33 +114,6 @@
 				3C7D241718439CF800E53075 /* HLProgresssViewSample-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3C7D242E18439CF800E53075 /* HLProgresssViewSampleTests */ = {
-			isa = PBXGroup;
-			children = (
-				3C7D243418439CF800E53075 /* HLProgresssViewSampleTests.m */,
-				3C7D242F18439CF800E53075 /* Supporting Files */,
-			);
-			path = HLProgresssViewSampleTests;
-			sourceTree = "<group>";
-		};
-		3C7D242F18439CF800E53075 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3C7D243018439CF800E53075 /* HLProgresssViewSampleTests-Info.plist */,
-				3C7D243118439CF800E53075 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3C7D243E18439D4800E53075 /* HLProgressView */ = {
-			isa = PBXGroup;
-			children = (
-				3C7D243F18439D4800E53075 /* HLProgressView.h */,
-				3C7D244018439D4800E53075 /* HLProgressView.m */,
-			);
-			path = HLProgressView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -185,24 +136,6 @@
 			productReference = 3C7D240618439CF800E53075 /* HLProgresssViewSample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3C7D242618439CF800E53075 /* HLProgresssViewSampleTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C7D243B18439CF800E53075 /* Build configuration list for PBXNativeTarget "HLProgresssViewSampleTests" */;
-			buildPhases = (
-				3C7D242318439CF800E53075 /* Sources */,
-				3C7D242418439CF800E53075 /* Frameworks */,
-				3C7D242518439CF800E53075 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3C7D242D18439CF800E53075 /* PBXTargetDependency */,
-			);
-			name = HLProgresssViewSampleTests;
-			productName = HLProgresssViewSampleTests;
-			productReference = 3C7D242718439CF800E53075 /* HLProgresssViewSampleTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,11 +144,6 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "Fifty Degrees";
-				TargetAttributes = {
-					3C7D242618439CF800E53075 = {
-						TestTargetID = 3C7D240518439CF800E53075;
-					};
-				};
 			};
 			buildConfigurationList = 3C7D240118439CF800E53075 /* Build configuration list for PBXProject "HLProgresssViewSample" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -231,7 +159,6 @@
 			projectRoot = "";
 			targets = (
 				3C7D240518439CF800E53075 /* HLProgresssViewSample */,
-				3C7D242618439CF800E53075 /* HLProgresssViewSampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -247,14 +174,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3C7D242518439CF800E53075 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C7D243318439CF800E53075 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -265,27 +184,11 @@
 				3C7D242018439CF800E53075 /* ViewController.m in Sources */,
 				3C7D241A18439CF800E53075 /* AppDelegate.m in Sources */,
 				3C7D241618439CF800E53075 /* main.m in Sources */,
-				3C7D244118439D4800E53075 /* HLProgressView.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3C7D242318439CF800E53075 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3C7D243518439CF800E53075 /* HLProgresssViewSampleTests.m in Sources */,
+				3C4F037D18FD9AF2004925CF /* HLProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		3C7D242D18439CF800E53075 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3C7D240518439CF800E53075 /* HLProgresssViewSample */;
-			targetProxy = 3C7D242C18439CF800E53075 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C7D241218439CF800E53075 /* InfoPlist.strings */ = {
@@ -302,14 +205,6 @@
 				3C7D241C18439CF800E53075 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3C7D243118439CF800E53075 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3C7D243218439CF800E53075 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -413,48 +308,6 @@
 			};
 			name = Release;
 		};
-		3C7D243C18439CF800E53075 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HLProgresssViewSample.app/HLProgresssViewSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HLProgresssViewSample/HLProgresssViewSample-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "HLProgresssViewSampleTests/HLProgresssViewSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		3C7D243D18439CF800E53075 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/HLProgresssViewSample.app/HLProgresssViewSample";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HLProgresssViewSample/HLProgresssViewSample-Prefix.pch";
-				INFOPLIST_FILE = "HLProgresssViewSampleTests/HLProgresssViewSampleTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -472,15 +325,6 @@
 			buildConfigurations = (
 				3C7D243918439CF800E53075 /* Debug */,
 				3C7D243A18439CF800E53075 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C7D243B18439CF800E53075 /* Build configuration list for PBXNativeTarget "HLProgresssViewSampleTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				3C7D243C18439CF800E53075 /* Debug */,
-				3C7D243D18439CF800E53075 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
